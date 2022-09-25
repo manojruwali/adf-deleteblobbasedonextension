@@ -1,0 +1,30 @@
+{
+	"name": "Ds_AzureSqlTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "foldername",
+				"type": "nvarchar"
+			},
+			{
+				"name": "filecount",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "wildcard",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tbl_blobdesc"
+		}
+	}
+}
